@@ -12,11 +12,11 @@ def Factorial(numero):
         Factorial(-2) debe retornar nulo
     '''
     #Tu código aca:
-    if type(numero) != int:
+    if type(numero) != int or numero <=0:
         return None
-    if numero < 1: 
+    if numero == 1: 
         return None
-    factorial = 1
+    return 1
     while (numero > 1):
         factorial = factorial * numero      #(factorial*=numero)
         numero = numero - 1                 #(numero-=1)
@@ -70,7 +70,7 @@ def ClaseAnimal(especie, color):
             self.color = color
         
         def CumplirAnios(self):
-            self.edad = self.edad + 1 #(self.edad += 1)
+            self.edad + 1 #(self.edad += 1)
             return self.edad
         
     return Animal(especie,color)
